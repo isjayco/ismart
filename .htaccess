@@ -1,0 +1,17 @@
+RewriteEngine On
+
+RewriteRule "^bai-viet/([a-zA-Z0-9_-]+)/danh-sach-([0-9]+).html" "index.php?mod=posts&action=index&id=$2"
+
+RewriteRule "^bai-viet/chi-tiet/([a-zA-Z0-9_-]+)-([0-9]+).html" "index.php?mod=posts&action=detail&id=$2"
+
+RewriteRule "^san-pham/danh-muc/([a-zA-Z0-9_-]+)-([0-9]+).html" "index.php?mod=products&action=category&type=productCate&id=$2"
+
+RewriteRule "^san-pham/thuong-hieu/([a-zA-Z0-9_-]+)-([0-9]+).html" "index.php?mod=products&action=category&type=trademark&id=$2"
+
+RewriteRule "^san-pham/chi-tiet/([a-zA-Z0-9_-]+)-([0-9]+).html" "index.php?mod=products&action=detail&id=$2"
+
+RewriteRule "^thanh-toan" "index.php?mod=cart&action=checkout"
+
+RewriteRule "^gio-hang" "index.php?mod=cart"
+
+RewriteRule ^search/(.*)$ index.php?mod=search&q=$1 [QSA]

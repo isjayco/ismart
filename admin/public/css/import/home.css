@@ -1,0 +1,77 @@
+body {
+
+}
+#main-content-wp.main-home #content .info-box {
+    height: 80px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#main-content-wp.main-home #content .title-wp-box h4{
+    font-size: 1.2rem;
+    color: #706f6f;
+}
+#main-content-wp.main-home #content .info-box .icon {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.12);
+    width: 80px;
+}
+#main-content-wp.main-home #content .info-box .icon i {
+    color: #fff;
+    font-size: 50px;
+    line-height: 80px;
+}
+#main-content-wp.main-home #content .info-box .content {
+    display: inline-block;
+    padding: 7px 10px;
+}
+#main-content-wp.main-home #content .info-box a.main-content-box {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+#main-content-wp.main-home #content .info-box a.main-content-box .box-title {
+    font-size: .9rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+#main-content-wp.main-home #content .info-box a.main-content-box .num-data {
+    font-size: 26px;
+}
+#main-content-wp.main-home #content .info-box.box-item-1 {
+    background-color: #E91E63;
+}
+#main-content-wp.main-home #content .info-box.box-item-2 {
+    background-color: #00BCD4;
+}
+#main-content-wp.main-home #content .info-box.box-item-3 {
+    background-color: #8BC34A;
+}
+#main-content-wp.main-home #content .info-box.box-item-4 {
+    background-color: #FF9800;
+}
+
+/* CHARTS */
+.wp-board .card {
+    background-color: #fff;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.wp-board .board {
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.wp-board .board.board-item-1 {
+    background-color: #E91E63;
+}
+.wp-board .board.board-item-2 {
+    background-color: #00BCD4;
+}
+.wp-board .board.board-item-3 {
+    background-color: #009688;
+}
+/* statistical */
+.statistical .box {
+    background-color: #fff;
+    height: 350px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}

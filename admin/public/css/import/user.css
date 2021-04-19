@@ -1,0 +1,236 @@
+body {
+    background-color: #00BCD4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#login-box {
+    position: absolute;
+    width: 400px;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#login-box .logo{
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#login-box .logo >* {
+    display: block;
+}
+#login-box .logo .title {
+    font-size: 30px;
+
+}
+#login-box .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+}
+#login-box .card .title-notifi {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: bold;
+    color: #959595;
+    text-align: center;
+}
+#login-box .card .sub-title-notifi {
+    color: #918989;
+    margin-top: 13px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+
+}
+#login-box .card .btn_to_email{
+    display: block;
+    background-color: #6abfca;
+    padding: 12px 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+#login-box .card form#sign_in p.msg {
+    font-size: 14px;
+    color: #8f8f8f;
+    text-align: center;
+    margin-bottom: 45px;
+    line-height: 20px;
+}
+#login-box .card form#sign_in .input-group {
+    display: flex;
+    justify-content: flex-start;
+    padding: 7px 0px;
+}
+#login-box .card form#sign_in .input-group span.logo-user.password {
+    font-size: 26px;
+}
+#login-box .card form#sign_in .input-group span.logo-user {
+    color: #555;
+    font-size: 20px;
+    padding: 17px 5px 17px 25px;
+}
+#login-box .card form#sign_in .form-group {
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+}
+#login-box .card form#sign_in .form-group .rule {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color: rgba(58, 58, 58, 0.5);
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    font-style: italic;
+    top: 47px;
+    left: 15px;
+    visibility: hidden;
+    transition: all .1s;
+}
+#login-box .card form#sign_in .form-group .error {
+    position: absolute;
+    top: 43px;
+    font-size: 12px;
+    font-style: italic;
+    color: #b1b1b1;
+    left: 20px;
+    width: 87%;
+}
+#login-box .card form#sign_in .form-group .error.account{
+    top: -32px;
+    left: 38px;
+}
+#login-box .card form#sign_in .form-group label[for='username'],
+#login-box .card form#sign_in .form-group label[for='password'],
+#login-box .card form#sign_in .form-group label[for='fullname'],
+#login-box .card form#sign_in .form-group label[for='email'],
+#login-box .card form#sign_in .form-group label[for='confirm_password'] {
+    position: absolute;
+    top: 3px;
+    font-size: 15px;
+    color: #7c7b7b;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .25s;
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+#login-box .card form#sign_in .form-group input:focus ~ .rule {
+    visibility: visible;
+    top: 39px;
+    left: 15px;
+    transition: all .75s;
+}
+
+#login-box .card form#sign_in .form-group input:focus ~ label.user,
+#login-box .card form#sign_in .form-group input:valid ~ label.user {
+    color: #00BCD4;
+    top: -24px;
+    left: 14px;
+    font-size: 13px;
+    transition: all .5s;
+}
+#login-box .card form#sign_in input[type='text'],
+#login-box .card form#sign_in input[type='password'],
+#login-box .card form#sign_in input[type='email'] {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+    color: #616161;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+}
+#login-box .card form#sign_in select[name='gender'] {
+    border: none;
+    border-bottom: 1px solid #cecece;
+    width: 100%;
+    padding: 5px 0px;
+    color: #797979;
+    font-size: 15px;
+}
+
+.bottom-form {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-form button[type='submit'] {
+    background-color: #E91E63;
+    border: none;
+    color: #fff;
+    padding: 6px 17px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    float: right;
+}
+.bottom-form button[type='submit'].full_size{
+    float: none;
+    padding: 10px 23px;
+    width: 100%;
+}
+#login-box .card form#sign_in input[type='checkbox'] {
+    visibility: hidden;
+}
+#login-box .card form#sign_in label[for='remember_me'] {
+    padding-left: 26px;
+    height: 25px;
+    line-height: 21px;
+    font-size: 13px;
+    font-weight: normal;position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+#login-box .card form#sign_in label.remember_me:after {
+    content: "";
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border: 2px solid #5a5a5a;
+    top: 0px;
+    z-index: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 1;
+    border-radius: 4px;
+}
+label.remember_me:before {
+    content: "";
+    position: absolute;
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 10;
+    top: 2px;
+    left: 7px;
+    transform: rotateZ(37deg);
+}
+[type="checkbox"].filled-in:checked + label:before {
+    width: 4px;
+    height: 12px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all .25s;
+}
+[type="checkbox"].filled-in:checked + label:after {
+    background-color: #E91E63!important;
+    border-color: #E91E63!important;
+    transition: all .1s;
+}
+.lost_pass a{
+    display: block;
+    font-size: 14px;
+    color: #00BCD4;
+    text-align:center;
+}
